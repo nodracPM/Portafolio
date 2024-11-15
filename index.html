@@ -6,33 +6,137 @@
     <meta descritpion>
     <title>Document</title>
 
-    <!-- Open Graph para visualizar el contenido compartido en toda las aplicaciones de meta-->
-    <meta
-        property="og:title"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metados para SEO -->
+     <meta name="description" content="Perfil profesional de Cardón Carrillo, desarrollador frontend.">
+     <meta name="keywords" content="html, herramientas de depurado de metadatos, proyecto web">
+     <meta name="author" content="Cardón Carrillo">
+
+     <!-- Open Graph nos sirve para optimización en redes social como Facebook, Instagram y Whatsapp -->
+      <meta
+        property = "og:title"
         content="Portafolio de Cardón Carrillo"
-    >
-    <meta
+      />
+      <meta
         property="og:description"
-        content="Descubre el portafolio de Cardón Carrillo"
-    >
+        content="Perfil profesional de Cardón Carrillo, desarrollador frontend."
+      />
+      <meta
+        property="og:image"
+        content="https://t4.ftcdn.net/jpg/08/35/71/93/360_F_835719338_lS0RNUOk2WQhaL2OmInZMMj7tr9SG0vU.jpg"
+      />
+      <meta
+        property="og:url"
+        content="https://nodracpm.github.io/Portafolio/"
+      />
+      <meta
+        property="og:type"
+        content="profile"
+      />
 
-    <!-- Twitter Cardas para visualizar el contenido compartido en X -->
-    <meta
+      <!-- Twittr Cads para visualizar el contenido compartido en X -->
+       <meta
         name="twitter:card"
-        content="sumary_large_image"
-    >
-    <meta
+        content="summary_large_image"
+       />
+       <meta
         name="twitter:title"
-        content="Portafolio de Cardón Carrillo"
-    >
-
-    <meta
-        name="twitter:description";
-        content="Descubre el portafolio de Cardón Carrillo"
-
-    >
+        content="Portafolio de Cardón Carrillo - desarrollador frontend"
+       />
+       <meta
+        name="twitter:description"
+        content="Descubre el portafolio de Cardón Carrillo, y sus proyectos de html"
+       />
+       <meta
+        name="twitter:image"
+        content="https://t4.ftcdn.net/jpg/08/35/71/93/360_F_835719338_lS0RNUOk2WQhaL2OmInZMMj7tr9SG0vU.jpg"
+       />
 </head>
 <body>
+    <header>
+        <!-- arai-label sirve para indicar el propósito de una etiqueta, en este caso la etiqueta nav -->
+        <nav aria-label ="Redes sociales de Cardón Carrillo">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <h1>Portafolio de Cardón Carrillo</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby = "proyectos">
+            <h2 id = "proyectos">Proyectos</h2>
+
+            <article arial-label="Proyecto 1">
+                <header>
+                    <h3>Proyecto 1</h3>
+                    <p> 
+                        <time datetime="2024-10"> Octubre 2024</time>
+                        <span>Tecnologías: HTML, Git, GitHub</span>
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quia libero fuga distinctio dolor et, odio soluta officia 
+                        illo corporis architecto ex similique, veritatis vero modi
+                        delectus ipsam suscipit temporibus ratione.
+                    </p>
+                </header>
+
+                <figure>
+                    <img 
+                        src="https://picsum.photos/200/300" 
+                        alt="Imagen de portafolio de Cardón Carrillo">
+                    <figcaption>Imagen de portafolio de Cardón Carrillo</figcaption>
+                </figure>
+                <a href="https://nodracpm.github.io/Portafolio/">Ver proyecto</a>
+            </article>
+
+            <article arial-label="Proyecto 2">
+                <header>
+                    <h3>Proyecto 2</h3>
+                    <p> 
+                        <time datetime="2024-10"> Octubre 2024</time>
+                        <span>Tecnologías: HTML, Git, GitHub</span>
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quia libero fuga distinctio dolor et, odio soluta officia 
+                        illo corporis architecto ex similique, veritatis vero modi
+                        delectus ipsam suscipit temporibus ratione.
+                    </p>
+                </header>
+
+                <figure>
+                    <img 
+                        src="https://picsum.photos/200/300" 
+                        alt="Imagen de portafolio de Cardón Carrillo">
+                    <figcaption>Imagen de portafolio de Cardón Carrillo</figcaption>
+                </figure>
+                <a href="https://nodracpm.github.io/Portafolio/">Ver proyecto</a>
+            </article>
+        </section>
+
+        <section aria-labelledby="habilidades"> 
+            <h2 id = habilidades>Habilidades</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>Control de versiones con Git y GitHub</li>
+                <li>Accesibilidad y SEO</li>
+            </ul>   
+        </section> 
+
+        <aside aria-labelledby="contacto">
+            <h2 id="contacto">Contacto</h2>
+            <p>Si deseas discutir un proyecto, no dudes en ponerte en contacto conmigo a través de:</p>
+            <p>Correo: <a href="mailto:2xYn2@example.com">2xYn2@example.com</a></p>
+            <p>Twitter: <a href="https://twitter.com/nodracpm">@nodracpm</a></p>
+        </aside>
+    </main>
     
 </body>
 </html>
